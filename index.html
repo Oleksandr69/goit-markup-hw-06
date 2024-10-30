@@ -24,7 +24,7 @@
 
   <body>
     <header class="header">
-      <div class="container header-navigation">
+      <div class="container header-container">
         <nav class="header-navigation">
           <a href="./index.html" class="logo"
             >Web<span class="header-logo">Studio</span></a
@@ -55,11 +55,83 @@
             </li>
           </ul>
         </address>
+        <button class="burger-btn" type="button" data-mobile-open>
+          <svg class="burger-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-heroicons"></use>
+          </svg>
+        </button>
+      </div>
+
+      <div class="mobile-menu" data-mobile>
+        <div class="container mobile-menu-container">
+          <button class="modal-open-btn" type="button" data-mobile-close>
+            <svg width="8" height="8" class="modal-open-icon">
+              <use href="./images/icons.svg#icon-close-black"></use>
+            </svg>
+          </button>
+          <nav class="mobile-menu-nav">
+            <ul class="mobile-nav-link">
+              <li class="mobile-menu-item">
+                <a href="./index.html" class="mobile-menu-link">Studio</a>
+              </li>
+              <li class="mobile-menu-item">
+                <a href="./index.html" class="mobile-menu-link">Portfolio</a>
+              </li>
+              <li class="mobile-menu-item">
+                <a href="./index.html" class="mobile-menu-link">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <address class="mobile-menu-address">
+            <ul class="mobile-address-list">
+              <li class="mobile-list-item">
+                <a href="tel:+110001111111" class="mobile-address-item"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li class="mobile-list-item">
+                <a href="mailto:info@devstudio.com" class="mobile-address-item"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+          <ul class="mobile-soc-list">
+            <li class="mobile-soc-item">
+              <a href="./index.html" class="soc-icon-link">
+                <svg class="soc-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="team-soc-list">
+              <a href="./index.html" class="soc-icon-link">
+                <svg class="soc-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="team-soc-list">
+              <a href="./index.html" class="soc-icon-link">
+                <svg class="soc-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="team-soc-list">
+              <a href="./index.html" class="soc-icon-link">
+                <svg class="soc-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
 
     <main>
-      <section class="hero">
+      <section class="hero hidden">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
           <button type="button" class="hero-button" data-modal-open>
@@ -68,7 +140,7 @@
         </div>
       </section>
 
-      <section class="about-us">
+      <section class="about-us hidden">
         <div class="container">
           <h2 class="about-us-title visually-hidden">
             Strategy, Punctuality, Diligence
@@ -126,7 +198,7 @@
         </div>
       </section>
 
-      <section class="team">
+      <section class="team hidden">
         <div class="container">
           <h2 class="team-title">Our Team</h2>
           <ul class="team-list">
@@ -302,7 +374,7 @@
         </div>
       </section>
 
-      <section class="portfolio">
+      <section class="portfolio hidden">
         <div class="container">
           <h2 class="portfolio-title">Our Portfolio</h2>
           <ul class="portfolio-list">
@@ -425,7 +497,7 @@
       </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer hidden">
       <div class="container footer-conteiner">
         <div class="footer-logo-conteiner">
           <a href="./index.html" class="logo logo-footer"
@@ -491,7 +563,7 @@
       </div>
     </footer>
 
-    <div class="backdrop" data-modal>
+    <div class="backdrop hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-open-btn" data-modal-close>
           <svg width="8" height="8" class="modal-open-icon">
@@ -577,5 +649,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile.js"></script>
   </body>
 </html>
