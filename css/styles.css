@@ -394,7 +394,7 @@ button {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/hero.jpg);
+    url(../images/dark-bg320x432mob.jpg);
   background-size: cover;
   width: 100%;
   background-repeat: no-repeat;
@@ -440,12 +440,41 @@ button {
   background-color: #404bbf;
 }
 
+@media screen and (min-resolution: 192dpi),
+  (min-resolution: 2dppx),
+  (-webkit-min-device-pixel-ratio: 2) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/dark-bg640x864mob@2x.jpg);
+  }
+}
+
 @media screen and (min-width: 768px) {
   .hero {
     width: 100%;
     max-width: 768px;
     padding-top: 112px;
     padding-bottom: 112px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/dark-bg768x436tab.jpg);
+  }
+
+  @media screen and (min-resolution: 192dpi),
+    (min-resolution: 2dppx),
+    (-webkit-min-device-pixel-ratio: 2) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/dark-bg1536x872tab@2x.jpg);
+    }
   }
 
   .hero-title {
@@ -462,6 +491,23 @@ button {
     padding-top: 188px;
     padding-bottom: 188px;
     max-width: 1440px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office1440x600.jpg);
+  }
+
+  @media screen and (min-resolution: 192dpi),
+    (min-resolution: 2dppx),
+    (-webkit-min-device-pixel-ratio: 2) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/people-office2880x1200@2x.jpg);
+    }
   }
 
   .hero-title {
